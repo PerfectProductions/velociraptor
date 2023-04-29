@@ -1,0 +1,1 @@
+#include <netinet/in.h>#undef        htons#undef        ntohsuint16_thtons (uint16_t x){#if BYTE_ORDER == BIG_ENDIAN  return x;#elif BYTE_ORDER == LITTLE_ENDIAN  return __bswap_16 (x);#else# error "What kind of system is this?"#endif}weak_alias (htons, ntohs)

@@ -1,0 +1,3 @@
+echo "Compiling Project"
+gcc -O  -s -static -nostdlib -nostdinc -fno-pie -Wl,--oformat=binary -Wl,-T,ape.lds -o velociraptor.com velociraptor.c -include cosmopolitan.h crt.o ape.o cosmopolitan.a  -w
+echo "Project Complete"

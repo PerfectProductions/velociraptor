@@ -1,0 +1,9 @@
+/o
+
+*.tmp
+/.bochs.log
+/HTAGS
+/TAGS
+/bx_enh_dbg.ini
+/tool/emacs/*.elc
+/usr/share/dict/words
